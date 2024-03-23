@@ -33,7 +33,6 @@ function CodeEditor() {
 
   const handleEditorDidMount = (editor, monaco) => {
     editorRef.current = editor;
-    // console.log("Editor is mounted");
   };
 
   const handleEditorChange = (value) => {
@@ -42,12 +41,10 @@ function CodeEditor() {
 
   const changeLanguage = (lang) => {
     setLanguage(lang);
-    // console.log("Selected language is:", lang);
   };
 
   const changeTheme = (th) => {
     setTheme(th);
-    // console.log("Selected theme is:", th);
   };
 
   const handleCompile = () => {
@@ -122,8 +119,6 @@ function CodeEditor() {
       } else {
         setProcessing(false);
         setOutput(response.data);
-        // console.log("Compiled Successfully");
-        // console.log(response.data);
         return;
       }
     } catch (error) {
