@@ -155,8 +155,8 @@ function CodeEditor() {
           />
         </div>
       </div>
-      <div className={`flex ${ theme.value === "vs-dark" ? "bg-[#1E1E1E]" : "bg-white"} max-w-full`}>
-        <div className="w-[60%]">
+      <div className={`flex flex-col ${ theme.value === "vs-dark" ? "bg-[#1E1E1E]" : "bg-white"} max-w-full lg:flex-row`}>
+        <div className=" w-[100%] lg:w-[60%]">
           <Editor
             height="89vh"
             width="100%"
@@ -170,7 +170,7 @@ function CodeEditor() {
             onChange={handleEditorChange}
           />
         </div>
-        <div className="w-[40%] px-2">
+        <div className=" w-[100%] lg:w-[40%] px-2">
           <Output output={output} theme ={theme} />
           <textarea
             name="stdin"

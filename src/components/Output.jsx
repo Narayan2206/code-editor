@@ -48,7 +48,7 @@ const lightStyle = "bg-white text-black border-2 border-solid border-black shado
     <>
     <h2 className={`text-xl font-bold m-3 ${ theme.value === "vs-dark" ? "text-white" : "text-black"}`} >Output:</h2>
       <div
-        className={`rounded-md my-3 text-sm ${ theme.value === "vs-dark" ? darkStyle : lightStyle} mx-2 h-1/3 p-2 overflow-y-auto`}
+        className={`rounded-md my-3 text-sm ${ theme.value === "vs-dark" ? darkStyle : lightStyle} mx-2 h-32  p-2 overflow-y-auto lg:h-1/3`}
         >
         {output? getOutput() : null}
       </div>
