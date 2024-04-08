@@ -1,8 +1,12 @@
-# React + Vite
+# Code Editor
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A code editor created using React. It can compile languages such as JavaScript (Node.js), C, C++, PHP, Java, TypeScript, etc.. It uses Monaco Editor which powers VS Code too and Judge0 for compiling and executing codes.
 
-Currently, two official plugins are available:
+This project was developed with the assistance of a blog on freeCodeCamp : [Build a Code IDE with React](https://www.freecodecamp.org/news/how-to-build-react-based-code-editor/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Installation and setup
+* git clone `https://github.com/Narayan2206/code-editor.git`
+* `npm install`
+* Get api keys by registering on [RapidAPI](https://rapidapi.com/judge0-official/api/judge0-ce/pricing).
+* Create a `.env` file based on `.env.sample` and add your api keys.
+* Run the project using `npm start`.
